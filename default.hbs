@@ -6,47 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   {{!-- Page Meta --}}
-  <title>{{meta_title}}</title>
+  <title>{{ meta_title }}</title>
 
   {{!-- Mobile Meta --}}
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   {{!-- Styles'n'Scripts --}}
-  <link rel="stylesheet" type="text/css" href="{{asset "main.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{ asset "main.css" }}" />
 
-  {{!-- Ghost outputs important style and meta data with this tag --}}
-  {{ghost_head}}
+  {{ ghost_head }}
 </head>
-<body class="{{body_class}}">
+<body class="{{ body_class }}">
 
-  <div class="row header">
-    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 header-left">
-      <div class="logo full row middle-xs center-xs">
-        <h1>{{@blog.title}}</h1>
-      </div>
-    </div>
-  </div>
+  <header class="layout-header">
+    <h1>{{ @blog.title }}</h1>
+  </header>
 
-  <div class="row content">
-    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 content-right">
-      <div class="full row">
-        {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
-        {{{body}}}
-      </div>
-    </div>
-  </div>
+  <section class="layout-content">
+    {{{ body }}}
+  </section>
 
-  {{!-- The tiny footer at the very bottom --}}
-  <footer class="site-footer clearfix">
-    <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
+  <footer class="layout-footer">
     <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
   </footer>
-  <div class="footer row middle-xs center-xs">
-    <p class="copyright">&copy; Kan Adachi {{date format="YYYY"}}</p>
-  </div>
-
-  {{!-- Ghost outputs important scripts and data with this tag --}}
-  {{ghost_foot}}
+  
+  {{ ghost_foot }}
 </body>
 </html>
