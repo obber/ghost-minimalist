@@ -1,0 +1,7 @@
+a {
+  color: palette('darkgray');
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
