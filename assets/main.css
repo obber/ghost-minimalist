@@ -431,5 +431,5 @@ body {
       grid-template-columns: 750px auto;
       grid-template-areas: "header  header" "content sidebar" "footer  footer"; } }
 
-.logo {
+.logo a {
   color: #9a9a9a; }
