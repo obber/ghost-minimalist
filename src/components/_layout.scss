@@ -8,6 +8,9 @@
 
 .layout-sidebar {
   grid-area: sidebar;
+  @include mq('xl') {
+    padding-left: 50px;
+  }
 }
 
 .layout-footer {
@@ -24,13 +27,17 @@ body {
     "sidebar"
     "footer";
 
-  @include mq('sm') {
-    padding-left: $leftGutter;
+  @include mq('md') {
+    padding-left: $leftGutter / 2;
     grid-template-columns: $columnWidth auto;
     grid-gap: 10px;
     grid-template-areas:
       "header  header"
       "content sidebar"
       "footer  footer";
+  }
+
+  @include mq('xl') {
+    padding-left: $leftGutter;
   }
 }

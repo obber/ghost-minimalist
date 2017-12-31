@@ -1,10 +1,10 @@
 <h1>Recent</h1>
-{{#get "posts"}}
-  {{#foreach posts}}
-    <ul class="single-post {{post_class}}">
-      <li>
+{{#get "posts" limit="15"}}
+  <ul>
+    {{#foreach posts}}
+      <li class="single-post {{post_class}}">
         <a href="{{url}}">{{title}}</a>
       </li>
-    </ul>
-  {{/foreach}}
+    {{/foreach}}
+  </ul>
 {{/get}}
