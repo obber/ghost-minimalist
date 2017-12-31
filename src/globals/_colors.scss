@@ -2,11 +2,3 @@ body {
   color: palette('darkgray');
   background: palette('white');
 }
-
-a {
-  color: palette('darkgray', 20);
-
-  &:hover {
-    color: palette('darkgray', 40);
-  }
-}

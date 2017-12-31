@@ -1,5 +1,5 @@
 .pagination {
-  margin-top: 30px;
+  margin-top: $verticalGutter;
   text-align: center;
   position: relative;
 }
@@ -12,4 +12,27 @@
 .older-posts {
   position: absolute;
   right: 0;
+}
+
+.read-story {
+  margin-top: $verticalGutter;
+  
+  &.next {
+    grid-area: next;
+  }
+
+  &.previous {
+    grid-area: previous;
+  }
+
+  span {
+    color: palette('darkgray', 60);
+  }
+}
+
+.more-content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 40px;
+  grid-template-areas: "previous next"
 }
