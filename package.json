@@ -1,0 +1,16 @@
+{
+  "name": "minimalist",
+  "version": "1.0.1",
+  "author": {
+    "name": "Kan Adachi",
+    "email": "kadachi1023@gmail.com"
+  },
+  "description": "A minimalist blogging theme for Ghost.",
+  "devDependencies": {
+    "node-sass-chokidar": "^0.0.3"
+  },
+  "scripts": {
+    "css": "node-sass-chokidar src/ -o assets/ --watch",
+    "css:build": "node-sass-chokidar src/ -o assets/"
+  }
+}
