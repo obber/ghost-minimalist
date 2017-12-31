@@ -1,7 +1,7 @@
 a {
-  color: palette('darkgray');
+  color: palette('accent');
 
   &:hover {
-    text-decoration: underline;
+    color: palette('accent', 20);
   }
 }
