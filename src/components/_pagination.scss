@@ -1,3 +1,15 @@
 .pagination {
   margin-top: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.newer-posts {
+  position: absolute;
+  left: 0;
+}
+
+.older-posts {
+  position: absolute;
+  right: 0;
 }
