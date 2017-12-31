@@ -1,3 +1,10 @@
-<h1>
-  Sidebar'in it up.
-</h1>
+<h1>Recent</h1>
+{{#get "posts"}}
+  {{#foreach posts}}
+    <ul class="single-post {{post_class}}">
+      <li>
+        <a href="{{url}}">{{title}}</a>
+      </li>
+    </ul>
+  {{/foreach}}
+{{/get}}
