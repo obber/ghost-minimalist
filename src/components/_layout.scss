@@ -1,0 +1,35 @@
+.layout-header {
+  grid-area: header;
+}
+
+.layout-content {
+  grid-area: content;
+}
+
+.layout-sidebar {
+  grid-area: sidebar;
+}
+
+.layout-footer {
+  grid-area: footer;
+}
+
+body {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "header"
+    "content"
+    "sidebar"
+    "footer";
+
+  @include mq('sm') {
+    padding-left: $leftGutter;
+    grid-template-columns: $columnWidth auto;
+    grid-template-areas:
+      "header  header"
+      "content sidebar"
+      "footer  footer";
+  }
+}

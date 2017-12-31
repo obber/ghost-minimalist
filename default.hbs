@@ -20,11 +20,15 @@
 <body class="{{ body_class }}">
 
   <header class="layout-header">
-    <h1>{{ @blog.title }}</h1>
+    <h1 class="logo">{{ @blog.title }}</h1>
   </header>
 
   <section class="layout-content">
     {{{ body }}}
+  </section>
+
+  <section class="layout-sidebar">
+    {{> "sidebar"}}
   </section>
 
   <footer class="layout-footer">
