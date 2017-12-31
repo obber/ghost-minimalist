@@ -15,6 +15,8 @@
 
 .layout-footer {
   grid-area: footer;
+  margin-top: 30px;
+  text-align: center;
 }
 
 body {
@@ -28,16 +30,15 @@ body {
     "footer";
 
   @include mq('md') {
-    padding-left: $leftGutter / 2;
-    grid-template-columns: $columnWidth auto;
+    grid-template-columns: $leftGutter / 2 $columnWidth auto;
     grid-gap: 10px;
     grid-template-areas:
-      "header  header"
-      "content sidebar"
-      "footer  footer";
+    "......  header   header"
+    "......  content  sidebar"
+    "footer  footer   footer";
   }
-
+  
   @include mq('xl') {
-    padding-left: $leftGutter;
+    grid-template-columns: $leftGutter $columnWidth auto;
   }
 }
