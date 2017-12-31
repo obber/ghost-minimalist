@@ -27,6 +27,7 @@ body {
   @include mq('sm') {
     padding-left: $leftGutter;
     grid-template-columns: $columnWidth auto;
+    grid-gap: 10px;
     grid-template-areas:
       "header  header"
       "content sidebar"

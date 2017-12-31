@@ -428,7 +428,8 @@ body {
   @media (min-width: 480px) {
     body {
       padding-left: 100px;
-      grid-template-columns: 750px auto;
+      grid-template-columns: 650px auto;
+      grid-gap: 10px;
       grid-template-areas: "header  header" "content sidebar" "footer  footer"; } }
 
 .logo a {
