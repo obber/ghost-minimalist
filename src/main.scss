@@ -1,6 +1,7 @@
 @import 'vars';
 
-@import 'defaults/normalize';
+@import 'vendor/normalize';
+@import 'vendor/prismTheme';
 
 @import 'modules/mq';
 @import 'modules/palette';
