@@ -1,10 +1,21 @@
 body {
-  font-family: $fontFamily;
-  font-size: 14px;
+  font-family: $bodyFontFamily;
+  font-weight: $bodyFontWeight;
+  font-size: 16px;
 
   @include mq('sm') {
-    font-size: 16px;
+    font-size: 18px;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $titleFontFamily;
+  font-weight: $titleFontWeight;
 }
 
 code[class*="language-"],

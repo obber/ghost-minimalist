@@ -1,16 +1,12 @@
-.layout-header {
-  grid-area: header;
-}
-
 .layout-content {
   grid-area: content;
+  padding: $verticalGutter $horizontalGutter;
 }
 
 .layout-sidebar {
   grid-area: sidebar;
-  @include mq('xl') {
-    padding-left: 50px;
-  }
+  border-right: 1px solid palette('darkgray');
+  padding: $verticalGutter $horizontalGutter;
 }
 
 .layout-footer {
@@ -21,24 +17,20 @@
 
 body {
   display: grid;
-  padding: 20px;
   grid-template-columns: 100%;
   grid-template-areas:
-    "header"
-    "content"
     "sidebar"
+    "content"
     "footer";
 
   @include mq('md') {
-    grid-template-columns: $leftGutter / 2 $columnWidth auto;
-    grid-gap: 10px;
+    grid-template-columns: $sidebarWidth $columnWidth;
     grid-template-areas:
-    "......  header   header"
-    "......  content  sidebar"
-    "footer  footer   footer";
+    "sidebar  content"
+    "footer   footer";
   }
-  
+
   @include mq('xl') {
-    grid-template-columns: $leftGutter $columnWidth auto;
+    grid-template-columns: $sidebarWidth $columnWidth;
   }
 }
