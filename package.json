@@ -1,13 +1,14 @@
 {
   "name": "minimalist",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "author": {
     "name": "Kan Adachi",
     "email": "kadachi1023@gmail.com"
   },
+  "keywords": ["ghost-theme"],
   "description": "A minimalist blogging theme for Ghost.",
   "devDependencies": {
-    "node-sass-chokidar": "^0.0.3"
+    "node-sass-chokidar": "^1.3.4"
   },
   "scripts": {
     "css": "node-sass-chokidar src/ -o assets/ --watch",
@@ -18,5 +19,8 @@
   },
   "dependencies": {
     "prismjs": "^1.15.0"
+  },
+  "config": {
+    "posts_per_page": 5
   }
 }
