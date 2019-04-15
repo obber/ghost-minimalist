@@ -1,5 +1,5 @@
 .pagination {
-  margin-top: $verticalGutter;
+  margin-top: $verticalGutterDouble;
   text-align: center;
   position: relative;
 }
@@ -16,7 +16,7 @@
 
 .read-story {
   margin-top: $verticalGutter;
-  
+
   &.next {
     grid-area: next;
   }

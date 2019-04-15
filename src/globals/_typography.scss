@@ -23,8 +23,12 @@ pre[class*="language-"] {
   font-family: $codeFontFamily;
 }
 
-p, li, pre, em {
+p, li, pre, em, blockquote {
   line-height: 1.45;
+}
+
+blockquote {
+  font-style: italic;
 }
 
 pre code {
