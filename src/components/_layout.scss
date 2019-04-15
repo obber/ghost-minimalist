@@ -1,36 +1,36 @@
+body {
+  width: 100%;
+}
+
 .layout-content {
-  grid-area: content;
   padding: $verticalGutter $horizontalGutter;
+  width: 100%;
+
+  @include mq('lg') {
+    padding: $verticalGutter $horizontalGutter $verticalGutter $contentGutter;
+    margin-left: $sidebarWidth;
+  }
 }
 
 .layout-sidebar {
-  grid-area: sidebar;
-  border-right: 1px solid palette('darkgray');
+  border-bottom: 2px solid palette('darkgray');
+  width: 100%;
   padding: $verticalGutter $horizontalGutter;
+  overflow-y: auto;
+
+  @include mq('lg') {
+    height: 100vh;
+    position: fixed;
+    width: $sidebarWidth;
+    border-right: 2px solid palette('darkgray');
+    border-bottom: none;
+  }
 }
 
-.layout-footer {
-  grid-area: footer;
-  margin-top: $verticalGutter;
-  text-align: center;
+.sidebar-container {
+  width: 100%;
 }
 
-body {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas:
-    "sidebar"
-    "content"
-    "footer";
-
-  @include mq('md') {
-    grid-template-columns: $sidebarWidth $columnWidth;
-    grid-template-areas:
-    "sidebar  content"
-    "footer   footer";
-  }
-
-  @include mq('xl') {
-    grid-template-columns: $sidebarWidth $columnWidth;
-  }
+.content-container {
+  max-width: $contentWidth;
 }

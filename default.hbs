@@ -15,17 +15,22 @@
   {{!-- Styles'n'Scripts --}}
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700|Source+Sans+Pro:700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ asset "main.css" }}" />
+  <script src="{{ asset "js/menu.js" }}"></script>
 
   {{ ghost_head }}
 </head>
 <body class="{{ body_class }}">
 
   <section class="layout-sidebar">
-    {{> "sidebar"}}
+    <div class="sidebar-container">
+      {{> "sidebar"}}
+    </div>
   </section>
 
   <section class="layout-content">
-    {{{ body }}}
+    <div class="content-container">
+      {{{ body }}}
+    </div>
   </section>
 
   <script src="{{ asset "vendor/prismjs/prism.js" }}"></script>

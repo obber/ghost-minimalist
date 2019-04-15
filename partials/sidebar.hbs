@@ -1,19 +1,25 @@
-<header class="widget">
+<header class="sidebar-header">
   <h1 class="logo">
     <a href="{{ @site.url }}">
       {{ @site.title }}
     </a>
   </h1>
+  <div class="hamburger-menu">
+    <div class="hamburger-menu-line"></div>
+    <div class="hamburger-menu-line"></div>
+    <div class="hamburger-menu-line"></div>
+  </div>
 </header>
 
-<div class="widget">
-  {{navigation}}
-</div>
+<div class="sidebar-content">
+  <div class="sidebar-widgets">
+    <div class="widget">
+      <h3>Links</h3>
+      {{navigation}}
+    </div>
+  </div>
 
-<div class="widget">
-  {{#get "tags" limit="all"}}{{tags}}{{/get}}
+  <footer class="sidebar-footer">
+    <section class="poweredby">Published with <a href="https://ghost.org">Ghost</a></section>
+  </footer>
 </div>
-
-{{!-- <footer class="layout-footer">
-  <section class="poweredby">Published with <a href="https://ghost.org">Ghost</a></section>
-</footer> --}}

@@ -9,6 +9,7 @@ $codeFontFamily: 'Monaco', 'Consolas', Monospace;
 
 $colors: (
   "white"    : #fff,
+  "label"    : #3b3b3b,
   "darkgray" : #1a1a1a,
   "highlight": #fffb00,
   "accent"   : #235aa1
@@ -22,6 +23,7 @@ $breakpoints: (
 );
 
 $sidebarWidth: 350px;
-$columnWidth: 650px;
+$contentWidth: 540px;
+$contentGutter: 80px;
 $verticalGutter: 40px;
-$horizontalGutter: 30px;
+$horizontalGutter: 40px;

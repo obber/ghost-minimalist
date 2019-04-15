@@ -1,0 +1,20 @@
+.hamburger-menu {
+  cursor: pointer;
+  width: 32px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 7px;
+  background-color: palette('darkgray');
+
+  @include mq('lg') {
+    display: none;
+  }
+}
+
+.hamburger-menu-line {
+  height: 2px;
+  width: 100%;
+  background-color: palette('white');
+}

@@ -3,7 +3,7 @@ body {
   font-weight: $bodyFontWeight;
   font-size: 16px;
 
-  @include mq('lg') {
+  @include mq('md') {
     font-size: 18px;
   }
 }
