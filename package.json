@@ -5,7 +5,9 @@
     "name": "Kan Adachi",
     "email": "kadachi1023@gmail.com"
   },
-  "keywords": ["ghost-theme"],
+  "keywords": [
+    "ghost-theme"
+  ],
   "description": "A minimalist blogging theme for Ghost.",
   "devDependencies": {
     "node-sass-chokidar": "^1.3.4"
