@@ -9,6 +9,7 @@ body {
   @include mq('lg') {
     padding: $verticalGutter $horizontalGutter $verticalGutter $contentGutter;
     margin-left: $sidebarWidth;
+    width: initial;
   }
 }
 
