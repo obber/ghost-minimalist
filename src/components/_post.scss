@@ -54,7 +54,9 @@
 }
 
 .post-meta {
-  color: palette('darkgray', 60);
+  border-top: 1px solid palette('darkgray', 70);
+  padding-top: 1rem;
+  color: palette('darkgray', 40);
   margin: 1rem 0 2rem 0;
 }
 
