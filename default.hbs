@@ -12,8 +12,14 @@
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  {{!-- Styles'n'Scripts --}}
+  {{!-- Prism --}}
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism-tomorrow.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js"></script>
+
+  {{!-- Google Fonts --}}
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700|Source+Sans+Pro:700" rel="stylesheet">
+
+  {{!-- Theme Assets --}}
   <link rel="stylesheet" type="text/css" href="{{ asset "main.css" }}" />
   <script src="{{ asset "js/menu.js" }}"></script>
 
@@ -32,8 +38,6 @@
       {{{ body }}}
     </div>
   </section>
-
-  <script src="{{ asset "vendor/prismjs/prism.js" }}"></script>
 
   {{ ghost_foot }}
 </body>

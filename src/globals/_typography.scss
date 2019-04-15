@@ -23,8 +23,12 @@ pre[class*="language-"] {
   font-family: $codeFontFamily;
 }
 
-p, li {
+p, li, pre, em {
   line-height: 1.45;
+}
+
+pre code {
+  font-size: 16px;
 }
 
 a {
