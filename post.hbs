@@ -6,16 +6,6 @@
     <header class="post-header">
       {{!-- Post Title --}}
       <h1 class="post-title">{{title}}</h1>
-
-      {{!-- Meta Information --}}
-      {{#is "post"}}
-      <section class="post-meta">
-        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
-          {{date format="DD MMMM YYYY"}}
-        </time>
-        {{tags prefix=" on "}}
-      </section>
-      {{/is}}
     </header>
 
     {{!-- Content --}}
@@ -23,26 +13,38 @@
       {{content}}
     </section>
 
-    <section class="more-content">
-      {{!-- Read Previous--}}
-      <div class="read-story previous">
-        {{#prev_post}}
-        <span>Previous:</span>
-        <a class="prev-link" href="{{url}}">
-          <h3>{{title}}</h3>
-        </a>
-        {{/prev_post}}
-      </div>
-      {{!-- Read Next --}}
-      <div class="read-story next">
-        {{#next_post}}
-        <span>Next:</span>
-        <a class="next-link" href="{{url}}">
-          <h3>{{title}}</h3>
-        </a>
-        {{/next_post}}
-      </div>
-    </section>
+    {{!-- Meta Information --}}
+    {{#is "post"}}
+      <section class="post-meta">
+        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+          {{date format="DD MMMM YYYY"}}
+        </time>
+        {{tags prefix=" on "}}
+      </section>
+    {{/is}}
+
+    {{#is "post"}}
+      <section class="more-content">
+        {{!-- Read Previous--}}
+        <div class="read-story previous">
+          {{#prev_post}}
+          <span>Previous:</span>
+          <a class="prev-link" href="{{url}}">
+            <h3>{{title}}</h3>
+          </a>
+          {{/prev_post}}
+        </div>
+        {{!-- Read Next --}}
+        <div class="read-story next">
+          {{#next_post}}
+          <span>Next:</span>
+          <a class="next-link" href="{{url}}">
+            <h3>{{title}}</h3>
+          </a>
+          {{/next_post}}
+        </div>
+      </section>
+    {{/is}}
 
   </article>
 {{/post}}
