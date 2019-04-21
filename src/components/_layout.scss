@@ -34,4 +34,9 @@ body {
 
 .content-container {
   max-width: $contentWidth;
+  margin: auto;
+
+  @include mq('lg') {
+    margin: 0;
+  }
 }
