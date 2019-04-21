@@ -17,22 +17,18 @@
 .read-story {
   margin-top: $verticalGutter;
 
-  &.next {
-    grid-area: next;
+  span {
+    color: palette('darkgray', 60);
   }
 
   &.previous {
-    grid-area: previous;
-  }
-
-  span {
-    color: palette('darkgray', 60);
+    margin-right: $horizontalGutter;
   }
 }
 
 .more-content {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-gap: 40px;
-  grid-template-areas: "previous next"
+  @include mq('sm') {
+    display: flex;
+    justify-content: space-between;
+  }
 }
