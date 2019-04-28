@@ -7,6 +7,7 @@ const ui = {
 
 function handleHamburgerClick() {
   ui.sidebarContent.classList.toggle('active');
+  ui.menu.classList.toggle('active');
 }
 
 function initSelectors() {

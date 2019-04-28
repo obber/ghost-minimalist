@@ -6,6 +6,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 7px;
+  position: relative;
   background-color: palette('darkgray');
 
   @include mq('lg') {
@@ -17,4 +18,36 @@
   height: 2px;
   width: 100%;
   background-color: palette('white');
+}
+
+.hamburger-menu.active .hamburger-menu-line {
+  display: none;
+}
+
+.hamburger-menu .close-menu {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger-menu.active .close-menu {
+  display: block;
+}
+
+.close-menu:before, .close-menu:after {
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: palette('white');
+}
+
+.close-menu:before {
+  transform: rotate(45deg);
+}
+
+.close-menu:after {
+  transform: rotate(-45deg);
 }
