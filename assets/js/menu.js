@@ -18,7 +18,7 @@ function initSelectors() {
 function init() {
   initSelectors();
   ui.menu.addEventListener('click', handleHamburgerClick);
-};
+}
 
 window.addEventListener('load', init);
 
