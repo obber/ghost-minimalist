@@ -1,9 +1,16 @@
 <header class="sidebar-header">
-  <h1 class="logo">
-    <a href="{{ @site.url }}">
-      {{ @site.title }}
-    </a>
-  </h1>
+  <div class="identity">
+    <h1 class="logo">
+      <a href="{{ @site.url }}">
+        {{ @site.title }}
+      </a>
+    </h1>
+    {{#if @site.description }}
+      <p class="description">
+        {{ @site.description }}
+      </p>
+    {{/if}}
+  </div>
   <div class="hamburger-menu">
     <div class="hamburger-menu-line"></div>
     <div class="hamburger-menu-line"></div>
