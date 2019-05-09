@@ -3,7 +3,7 @@ body {
 }
 
 .layout-content {
-  padding: $verticalGutter $horizontalGutter;
+  padding: $verticalGutterMobile $horizontalGutterMobile;
   width: 100%;
 
   @include mq('lg') {
