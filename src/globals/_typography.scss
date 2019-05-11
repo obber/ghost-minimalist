@@ -1,6 +1,7 @@
 body {
-  font-family: $bodyFontFamily;
+  font-family: $titleFontFamily;
   font-weight: $bodyFontWeight;
+  line-height: 1.2;
   font-size: 16px;
 
   @include mq('md') {
@@ -16,6 +17,15 @@ h5,
 h6 {
   font-family: $titleFontFamily;
   font-weight: $titleFontWeight;
+}
+
+.post,
+.page {
+  p, li, pre, em, blockquote {
+    font-family: $bodyFontFamily;
+    font-weight: $bodyFontWeight;
+    line-height: 1.5;
+  }
 }
 
 h1 {
@@ -47,10 +57,6 @@ pre[class*="language-"] {
   font-family: $codeFontFamily;
 }
 
-p, li, pre, em, blockquote {
-  line-height: 1.5;
-}
-
 blockquote {
   font-style: italic;
 }
@@ -61,13 +67,4 @@ pre code {
 
 a {
   text-decoration: none;
-}
-
-.sidebar-container {
-  font-family: $titleFontFamily;
-  font-size: 1rem;
-
-  p, li, pre, em, blockquote {
-    line-height: 1.2;
-  }
 }
