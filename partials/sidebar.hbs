@@ -6,9 +6,9 @@
       </a>
     </h1>
     {{#if @site.description }}
-      <p class="description">
-        {{ @site.description }}
-      </p>
+    <p class="description">
+      {{ @site.description }}
+    </p>
     {{/if}}
   </div>
   <div class="hamburger-menu">
@@ -25,6 +25,34 @@
       <h3>Links</h3>
       {{navigation}}
     </div>
+
+    {{#get "posts" filter="featured:true" limit="5" as |featured|}}
+      {{#if featured.length}}
+        <div class="widget recent-posts">
+          <h3>Featured</h3>
+            <ul>
+              {{#foreach featured}}
+              <li><a href="{{url}}">{{title}}</a></li>
+              {{/foreach}}
+            </ul>
+        </div>
+      {{/if}}
+    {{/get}}
+
+
+    {{#get "posts" limit="3" as |recents|}}
+      {{#if recents.length}}
+        <div class="widget recent-posts">
+          <h3>Recent Posts</h3>
+            <ul>
+              {{#foreach recents}}
+              <li><a href="{{url}}">{{title}}</a></li>
+              {{/foreach}}
+            </ul>
+        </div>
+      {{/if}}
+    {{/get}}
+
   </div>
 
   <footer class="sidebar-footer">
