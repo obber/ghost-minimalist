@@ -22,14 +22,14 @@
 <div class="sidebar-content">
   <div class="sidebar-widgets">
     <div class="widget">
-      <h3>Links</h3>
+      <h4>Links</h4>
       {{navigation}}
     </div>
 
     {{#get "posts" filter="featured:true" limit="5" as |featured|}}
       {{#if featured.length}}
         <div class="widget recent-posts">
-          <h3>Featured</h3>
+          <h4>Featured</h4>
             <ul>
               {{#foreach featured}}
               <li><a href="{{url}}">{{title}}</a></li>
@@ -43,7 +43,7 @@
     {{#get "posts" limit="3" as |recents|}}
       {{#if recents.length}}
         <div class="widget recent-posts">
-          <h3>Recent Posts</h3>
+          <h4>Recent Posts</h4>
             <ul>
               {{#foreach recents}}
               <li><a href="{{url}}">{{title}}</a></li>

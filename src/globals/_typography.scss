@@ -3,10 +3,6 @@ body {
   font-weight: $titleFontWeightLight;
   line-height: 1.2;
   font-size: 16px;
-
-  @include mq('md') {
-    font-size: 18px;
-  }
 }
 
 h1,
@@ -26,6 +22,12 @@ h6 {
     font-weight: $bodyFontWeight;
     line-height: 1.5;
   }
+
+  p, li, em, blockquote {
+    @include mq('md') {
+      font-size: 1.125rem;
+    }
+  }
 }
 
 h1 {
@@ -37,11 +39,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.37rem;
+  font-size: 1.375rem;
 }
 
 h4 {
-  font-size: 1.21rem;
+  font-size: 1.25rem;
 }
 
 h5 {
@@ -62,7 +64,7 @@ blockquote {
 }
 
 pre code {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 a {
