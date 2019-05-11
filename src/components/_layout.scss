@@ -16,11 +16,12 @@ body {
 .layout-sidebar {
   border-bottom: 2px solid palette('darkgray');
   width: 100%;
-  padding: $verticalGutter $horizontalGutter;
+  padding: $verticalGutterMobile $horizontalGutterMobile;
   overflow-y: auto;
 
   @include mq('lg') {
     height: 100vh;
+    padding: $verticalGutterMobile $horizontalGutterMobile;
     position: fixed;
     width: $sidebarWidth;
     border-right: 2px solid palette('darkgray');
