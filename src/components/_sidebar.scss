@@ -49,5 +49,9 @@
 }
 
 .poweredby {
-  color: palette('label')
+  color: palette('hint');
+
+  a {
+    color: palette('label');
+  }
 }
