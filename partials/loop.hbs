@@ -3,7 +3,9 @@
 <article class="single-post {{post_class}}">
   <header>
     <h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
-    <img class="post-image" src="{{feature_image}}"/>
+    {{#if feature_image}}
+      <img class="post-image" src="{{feature_image}}"/>
+    {{/if}}
   </header>
   <section class="post">
     {{content}}

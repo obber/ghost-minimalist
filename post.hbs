@@ -6,7 +6,9 @@
     <header class="post-header">
       {{!-- Post Title --}}
       <h1 class="post-title">{{title}}</h1>
-      <img class="post-image" src="{{feature_image}}"/>
+      {{#if feature_image}}
+        <img class="post-image" src="{{feature_image}}"/>
+      {{/if}}
     </header>
 
     {{!-- Content --}}
