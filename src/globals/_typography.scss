@@ -48,7 +48,7 @@ pre[class*="language-"] {
 }
 
 p, li, pre, em, blockquote {
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 blockquote {
@@ -61,4 +61,13 @@ pre code {
 
 a {
   text-decoration: none;
+}
+
+.sidebar-container {
+  font-family: $titleFontFamily;
+  font-size: 1rem;
+
+  p, li, pre, em, blockquote {
+    line-height: 1.2;
+  }
 }

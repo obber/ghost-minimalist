@@ -21,7 +21,7 @@ body {
 
   @include mq('lg') {
     height: 100vh;
-    padding: $verticalGutterMobile $horizontalGutterMobile;
+    padding: $verticalGutter $horizontalGutter;
     position: fixed;
     width: $sidebarWidth;
     border-right: 2px solid palette('darkgray');
