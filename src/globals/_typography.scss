@@ -15,19 +15,18 @@ h6 {
   font-weight: $titleFontWeight;
 }
 
-.post,
-.page {
-  p, li, pre, em, blockquote {
-    font-family: $bodyFontFamily;
-    font-weight: $bodyFontWeight;
-    line-height: 1.5;
-  }
+.post-content {
+  font-family: $bodyFontFamily;
+  font-weight: $bodyFontWeight;
+  line-height: 1.5;
+  // p, li, pre, em, blockquote {
+  // }
 
-  p, li, em, blockquote {
+  // p, li, em, blockquote {
     @include mq('md') {
       font-size: 1.125rem;
     }
-  }
+  // }
 }
 
 h1 {
