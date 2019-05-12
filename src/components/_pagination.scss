@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.page-number {
+  color: palette('label');
+}
+
 .newer-posts {
   position: absolute;
   left: 0;
