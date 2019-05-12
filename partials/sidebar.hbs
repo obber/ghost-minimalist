@@ -9,6 +9,9 @@
         {{/if}}
       </a>
     </h1>
+    {{#if @site.description}}
+      <p class="description">{{@site.description}}</p>
+    {{/if}}
   </div>
   <div class="hamburger-menu">
     <div class="hamburger-menu-line"></div>
@@ -54,7 +57,8 @@
 
   </div>
 
-  <footer class="sidebar-footer">
-    <section class="poweredby">Published with <a href="https://ghost.org">Ghost</a></section>
-  </footer>
 </div>
+
+<footer class="sidebar-footer">
+  <section class="poweredby">Published with <a href="https://ghost.org">Ghost</a></section>
+</footer>

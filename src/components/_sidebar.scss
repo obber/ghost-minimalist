@@ -45,13 +45,13 @@
 }
 
 .sidebar-footer {
-  margin-top: $verticalGutter;
-}
+  margin: $verticalGutter 0;
 
-.poweredby {
-  color: palette('hint');
+  .poweredby {
+    color: palette('hint');
 
-  a {
-    color: palette('label');
+    a {
+      color: palette('label');
+    }
   }
 }
