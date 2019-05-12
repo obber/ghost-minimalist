@@ -1,8 +1,12 @@
 <header class="sidebar-header">
   <div class="identity">
     <h1 class="logo">
-      <a href="{{ @site.url }}">
-        {{ @site.title }}
+      <a href="{{@site.url}}">
+        {{#if @site.logo}}
+          <img class="logo-img" src="{{@site.logo}}" alt="{{@site.title}} logo"/>
+        {{else}}
+          {{@site.title}}
+        {{/if}}
       </a>
     </h1>
   </div>
