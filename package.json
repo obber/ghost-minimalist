@@ -1,6 +1,6 @@
 {
   "name": "minimalist",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "author": {
     "name": "Kan Adachi",
     "email": "kadachi1023@gmail.com"
@@ -20,7 +20,8 @@
     "css:build": "node-sass-chokidar src/ -o assets/",
     "build:vendor": "./scripts/buildVendorAssets.sh",
     "build": "npm run build:vendor && npm run css:build",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "zip": "scripts/theme_builder.sh"
   },
   "dependencies": {
     "prismjs": "^1.15.0"
