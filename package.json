@@ -24,7 +24,7 @@
     "zip": "scripts/theme_builder.sh"
   },
   "dependencies": {
-    "prismjs": "^1.15.0"
+    "prismjs": "^1.21.0"
   },
   "config": {
     "posts_per_page": 5
