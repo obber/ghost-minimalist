@@ -10,7 +10,7 @@
   ],
   "description": "A minimalist blogging theme for Ghost.",
   "devDependencies": {
-    "node-sass-chokidar": "^1.3.4"
+    "node-sass-chokidar": "^1.5.0"
   },
   "engines": {
     "ghost-api": "v2"
