@@ -24,6 +24,12 @@
   <script src="{{ asset "js/menu.js" }}"></script>
   <script src="{{ asset "js/resize-iframe.js" }}"></script>
 
+  {{!-- Theme Settings --}}
+  <script>
+    window.setThemeConfig = function(s) {window.gm_ts = s;};
+    window.getThemeConfig = function() {return window.gm_ts;};
+  </script>
+
   {{ ghost_head }}
 </head>
 <body class="{{ body_class }}">
