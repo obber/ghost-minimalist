@@ -52,7 +52,7 @@ HTML:
 
 Which ends up looking like this:
 
-<img alt="Form screenshot" width="100%" height="auto" style="max-width: 607px;">
+<img alt="Form screenshot" src="https://i.imgur.com/OHx58UX.png" width="100%" height="auto" style="max-width: 607px;">
 
 ## Developer notes
 
