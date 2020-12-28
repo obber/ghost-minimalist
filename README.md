@@ -52,7 +52,7 @@ HTML:
 
 Which ends up looking like this:
 
-![Form screenshot](https://i.imgur.com/OHx58UX.png)
+<img alt="Form screenshot" width="100%" height="auto" style="max-width: 607px;">
 
 ## Developer notes
 
