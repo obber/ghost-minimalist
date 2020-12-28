@@ -1,0 +1,64 @@
+/**
+ * Styles for default form elements.
+ */
+
+input,
+textarea {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  color: palette('label');
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  font-family: $bodyFontFamily;
+  width: 100%;
+  padding: .825rem;
+  font-size: 1rem;
+  font-height: 1.4rem;
+  border: 1px solid palette('label');
+
+  &:focus {
+    outline: 1px solid palette('accent');
+    border: 1px solid palette('accent');
+  }
+}
+
+textarea {
+  min-height: 11rem;
+}
+
+button {
+  padding: .75rem 1.25rem;
+  font-family: $titleFontFamily;
+  border: 0;
+  outline: 0;
+  background: palette('accent');
+  color: palette('white');
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &:active {
+    background: palette('accent', -15);
+  }
+
+  &:focus,
+  &:hover {
+    background: palette('accent', 15);
+  }
+
+  svg {
+    fill: palette('white');
+    margin-right: .5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
