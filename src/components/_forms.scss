@@ -45,6 +45,7 @@ button {
   cursor: pointer;
   display: flex;
   align-items: center;
+  border-radius: .25rem;
 
   &:active {
     background: palette('accent', -15);
