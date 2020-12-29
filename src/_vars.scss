@@ -1,7 +1,8 @@
 $bodyFontFamily: georgia, serif;
 $bodyFontWeight: 400;
 
-$titleFontFamily: 'Fira Sans', sans-serif;
+/** Default to available system fonts */
+$titleFontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $titleFontWeightLight: 500;
 $titleFontWeight: 700;
 
