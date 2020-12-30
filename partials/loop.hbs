@@ -1,25 +1,29 @@
 {{!-- This is the post loop - each post will be output using this markup --}}
 {{#foreach posts}}
-<article class="single-post {{post_class}}">
-  <header>
-    <h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
-    {{#if feature_image}}
-      <img class="post-image" src="{{feature_image}}"/>
-    {{/if}}
-  </header>
-  <section class="post-content">
-    {{content}}
-  </section>
-  <footer class="post-meta">
-    <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">
-      {{date format="MMMM DD, YYYY"}}
-    </time>
-    {{tags prefix=" on "}}
-  </footer>
-</article>
+  <article class="single-post {{post_class}}">
+    <header>
+      <h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
+      {{#if feature_image}}
+        <img class="post-image" src="{{feature_image}}"/>
+      {{/if}}
+    </header>
+    <section class="post-content">
+      {{content}}
+    </section>
+    <footer class="post-meta">
+      <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">
+        {{date format="MMMM DD, YYYY"}}
+      </time>
+      {{tags prefix=" on "}}
+    </footer>
+  </article>
 {{/foreach}}
 
 {{!-- Previous/next page links - displayed on every page --}}
-<section>
-  {{pagination}}
-</section>
+{{#if posts}}
+  <section>
+    {{pagination}}
+  </section>
+{{else}}
+  <p>No posts have been published yet.</p>
+{{/if}}
