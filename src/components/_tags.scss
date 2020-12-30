@@ -1,0 +1,32 @@
+.tags {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-gap: 1rem;
+  min-width: 0;
+
+  .tag {
+    position: relative;
+    height: 11rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 100%;
+      width: 100%;
+      transition: filter 0.1s ease-in-out;
+      filter: brightness(50%);
+    }
+
+    &:hover img {
+      filter: brightness(72%);
+    }
+
+    h4 {
+      position: absolute;
+      bottom: 0;
+      color: palette('white');
+    }
+  }
+}

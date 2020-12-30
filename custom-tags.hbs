@@ -1,0 +1,21 @@
+{{!< default}}
+
+{{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
+  {{#if tags}}
+    <h1>Tags</h1>
+    <div class="tags">
+      {{#foreach tags}}
+        <a href='{{ url }}'>
+          <div class="tag">
+            {{#if feature_image }}
+              <img src="{{ feature_image }}" alt="{{ description }}">
+            {{/if}}
+            <h4>{{ name }} ({{ count.posts }})</h4>
+          </div>
+        </a>
+      {{/foreach}}
+    </div>
+  {{else}}
+    <p>No tags to display.</p>
+  {{/if}}
+{{/get}}
