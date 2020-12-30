@@ -6,7 +6,7 @@ A minimalist blog theme for the [Ghost](https://ghost.org/) publishing platform.
 
 ## Download
 
-- [Version 2.1.3](https://kanadachi-themes.objects-us-east-1.dream.io/ghost-minimalist-2.1.3.zip) (Latest).
+- [Version 2.2.0](https://kanadachi-themes.objects-us-east-1.dream.io/ghost-minimalist-2.2.0.zip) (Latest).
 
 See the [Changelog](CHANGELOG.md) for the latest features.
 
