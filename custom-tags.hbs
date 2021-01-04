@@ -8,7 +8,7 @@
         <a href='{{ url }}'>
           <div class="tag">
             {{#if feature_image }}
-              <img src="{{ feature_image }}" alt="{{ description }}">
+              <img src="{{ feature_image }}" alt="{{ description }}" loading="lazy">
             {{/if}}
             <h4>{{ name }} ({{ count.posts }})</h4>
           </div>
