@@ -95,6 +95,7 @@
 .kg-bookmark-card {
   width: 100%;
   position: relative;
+  margin: 1rem 0;
 }
 
 .kg-bookmark-container {
@@ -120,10 +121,12 @@
 
 .kg-bookmark-title {
   font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .kg-bookmark-metadata,
 .kg-bookmark-description {
+  font-size: 1rem;
   margin-top: .5em;
 }
 
@@ -143,16 +146,19 @@
 
 .kg-bookmark-icon {
   display: inline-block;
-  width: 1em;
   height: 1em;
   vertical-align: text-bottom;
   margin-right: .5em;
   margin-bottom: .05em;
 }
 
+.kg-bookmark-content .kg-bookmark-icon {
+  width: 1em;
+}
+
 .kg-bookmark-thumbnail {
   display: flex;
-  flex-basis: 24rem;
+  flex-basis: 16rem;
   flex-grow: 1;
 }
 
@@ -168,8 +174,3 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
-.kg-bookmark-publisher::before {
-   content: "•";
-   margin: 0 .5em;
- }
